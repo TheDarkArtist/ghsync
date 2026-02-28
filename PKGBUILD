@@ -10,7 +10,7 @@ license=('MIT')
 depends=('gcc-libs' 'glibc' 'github-cli')
 makedepends=('cargo')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz")
-b2sums=('SKIP')
+b2sums=('a51fce8b2316c55818518113faca9ee477124ac1afb5d7fe709ff93aaf937ca92b1cf06b45c7db8eb6e13132d439982efc64398c6435ea9de72ebfaeaa215346')
 
 prepare() {
   cd "${pkgname}-${pkgver}"
