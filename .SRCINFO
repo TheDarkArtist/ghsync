@@ -7,8 +7,10 @@ pkgbase = ghsync
 	arch = aarch64
 	license = MIT
 	makedepends = cargo
+	depends = gcc-libs
+	depends = glibc
 	depends = github-cli
 	source = ghsync-0.1.0.tar.gz::https://github.com/TheDarkArtist/ghsync/archive/v0.1.0.tar.gz
-	sha256sums = SKIP
+	b2sums = SKIP
 
 pkgname = ghsync
