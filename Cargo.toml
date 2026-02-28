@@ -4,8 +4,13 @@ version = "0.1.0"
 edition = "2024"
 description = "Back up all your GitHub repos (personal + org) using the gh CLI"
 license = "MIT"
-authors = ["Kushagra Sharma <kushagrasharma@duck.com>"]
+authors = ["Kushagra Sharma (TheDarkArtist) <kushagra@thedarkartist.in>"]
 repository = "https://github.com/TheDarkArtist/ghsync"
+homepage = "https://github.com/TheDarkArtist/ghsync"
+keywords = ["github", "backup", "mirror", "cli", "git"]
+categories = ["command-line-utilities", "development-tools"]
+rust-version = "1.85"
+exclude = ["PKGBUILD", ".SRCINFO", "ghsync.install"]
 
 [dependencies]
 clap = { version = "4", features = ["derive"] }

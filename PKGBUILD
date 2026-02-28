@@ -1,4 +1,4 @@
-# Maintainer: Kushagra Sharma <kushagrasharma@duck.com>
+# Maintainer: Kushagra Sharma (TheDarkArtist) <kushagra@thedarkartist.in>
 
 pkgname=ghsync
 pkgver=0.1.0
@@ -8,7 +8,12 @@ arch=('x86_64' 'aarch64')
 url="https://github.com/TheDarkArtist/ghsync"
 license=('MIT')
 depends=('gcc-libs' 'glibc' 'github-cli')
+optdepends=('git: required for fetch/update operations on existing clones')
 makedepends=('cargo')
+provides=("${pkgname}")
+conflicts=("${pkgname}-git" "${pkgname}-bin")
+options=('!lto')
+install=ghsync.install
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz")
 b2sums=('a51fce8b2316c55818518113faca9ee477124ac1afb5d7fe709ff93aaf937ca92b1cf06b45c7db8eb6e13132d439982efc64398c6435ea9de72ebfaeaa215346')
 

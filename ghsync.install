@@ -1,0 +1,9 @@
+post_install() {
+  echo ":: ghsync requires an authenticated gh CLI session"
+  echo ":: Run 'gh auth login' if you haven't already"
+  echo ":: Usage: ghsync --help"
+}
+
+post_upgrade() {
+  echo ":: ghsync upgraded to $1"
+}
